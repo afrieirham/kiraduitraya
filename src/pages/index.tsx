@@ -21,7 +21,7 @@ export default function Home() {
       <div className="w-full space-y-5">
         <div className="flex w-full items-center space-x-2 justify-between">
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => (rm100 < 1 ? rm100 : setRM100(rm100 - 1))}
           >
             -
@@ -31,7 +31,7 @@ export default function Home() {
           <span>x</span>
           <span>{rm100}</span>
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => setRM100(rm100 + 1)}
           >
             +
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <div className="flex w-full items-center space-x-2 justify-between">
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => (rm50 < 1 ? rm50 : setRM50(rm50 - 1))}
           >
             -
@@ -49,7 +49,7 @@ export default function Home() {
           <span>x</span>
           <span>{rm50}</span>
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => setRM50(rm50 + 1)}
           >
             +
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <div className="flex w-full items-center space-x-2 justify-between">
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => (rm20 < 1 ? rm20 : setRM20(rm20 - 1))}
           >
             -
@@ -67,7 +67,7 @@ export default function Home() {
           <span>x</span>
           <span>{rm20}</span>
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => setRM20(rm20 + 1)}
           >
             +
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
         <div className="flex w-full items-center space-x-2 justify-between">
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => (rm10 < 1 ? rm10 : setRM10(rm10 - 1))}
           >
             -
@@ -85,7 +85,7 @@ export default function Home() {
           <span>x</span>
           <span>{rm10}</span>
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => setRM10(rm10 + 1)}
           >
             +
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
         <div className="flex w-full items-center space-x-2 justify-between">
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => (rm5 < 1 ? rm5 : setRM5(rm5 - 1))}
           >
             -
@@ -103,7 +103,7 @@ export default function Home() {
           <span>x</span>
           <span>{rm5}</span>
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => setRM5(rm5 + 1)}
           >
             +
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
         <div className="flex w-full items-center space-x-2 justify-between">
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => (rm1 < 1 ? rm1 : setRM1(rm1 - 1))}
           >
             -
@@ -121,7 +121,7 @@ export default function Home() {
           <span>x</span>
           <span>{rm1}</span>
           <button
-            className="px-5 py-3 rounded-lg bg-gray-100"
+            className="px-5 py-3 rounded-lg bg-gray-100 hover:bg-gray-300"
             onClick={() => setRM1(rm1 + 1)}
           >
             +
