@@ -135,6 +135,24 @@ export default function Home() {
           {rm100 * 100 + rm50 * 50 + rm20 * 20 + rm10 * 10 + rm5 * 5 + rm1 * 1}
         </span>
       </p>
+      <p className="text-gray-300 absolute bottom-4 text-[12px]">
+        Illustration by{" "}
+        <a
+          href="https://lovepik.com/photographer/2053792p"
+          target="_blank"
+          className="hover:underline"
+        >
+          HappySnow
+        </a>{" "}
+        on{" "}
+        <a
+          href="https://lovepik.com/images/png-malaysia.html"
+          target="_blank"
+          className="hover:underline"
+        >
+          LovePik
+        </a>
+      </p>
     </div>
   );
 }
