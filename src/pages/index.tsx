@@ -10,7 +10,7 @@ export default function Home() {
   const [rm1, setRM1] = useState(0);
 
   return (
-    <div className="w-full flex flex-col items-center py-20 max-w-sm mx-auto space-y-10 px-4">
+    <div className="w-full flex flex-col items-center py-20 max-w-sm mx-auto space-y-14 px-4">
       <SEOHead
         title="Kira Duit Raya"
         description="Calculator untuk kira duit raya"
@@ -134,23 +134,25 @@ export default function Home() {
           RM
           {rm100 * 100 + rm50 * 50 + rm20 * 20 + rm10 * 10 + rm5 * 5 + rm1 * 1}
         </p>
+        <div className="mt-6">
+          <button
+            className="hover:bg-gray-300 text-[12px] bg-gray-100 px-3 py-1 rounded"
+            onClick={() => {
+              if (confirm("buat semula?")) {
+                setRM100(0);
+                setRM50(0);
+                setRM20(0);
+                setRM10(0);
+                setRM5(0);
+                setRM1(0);
+              }
+            }}
+          >
+            semula
+          </button>
+        </div>
       </div>
-      <button
-        className="hover:underline text-[12px] text-gray-400"
-        onClick={() => {
-          if (confirm("buat semula?")) {
-            setRM100(0);
-            setRM50(0);
-            setRM20(0);
-            setRM10(0);
-            setRM5(0);
-            setRM1(0);
-          }
-        }}
-      >
-        semula
-      </button>
-      <p className="text-gray-300 absolute bottom-4 text-[12px]">
+      <p className="text-gray-300 text-[12px]">
         Illustration by{" "}
         <a
           href="https://lovepik.com/photographer/2053792p"
