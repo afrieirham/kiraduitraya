@@ -10,7 +10,7 @@ export default function Home() {
   const [rm1, setRM1] = useState(0);
 
   return (
-    <div className="w-full flex flex-col items-center py-20 max-w-sm mx-auto space-y-10 px-2">
+    <div className="w-full flex flex-col items-center py-20 max-w-sm mx-auto space-y-10 px-4">
       <SEOHead
         title="Kira Duit Raya"
         description="Calculator untuk kira duit raya"
@@ -128,13 +128,28 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <p>
-        Jumlah:{" "}
-        <span>
+      <div className="flex flex-col w-full text-center justify-center">
+        <p>Jumlah:</p>
+        <p className="text-2xl font-bold">
           RM
           {rm100 * 100 + rm50 * 50 + rm20 * 20 + rm10 * 10 + rm5 * 5 + rm1 * 1}
-        </span>
-      </p>
+        </p>
+      </div>
+      <button
+        className="hover:underline text-[12px] text-gray-400"
+        onClick={() => {
+          if (confirm("buat semula?")) {
+            setRM100(0);
+            setRM50(0);
+            setRM20(0);
+            setRM10(0);
+            setRM5(0);
+            setRM1(0);
+          }
+        }}
+      >
+        semula
+      </button>
       <p className="text-gray-300 absolute bottom-4 text-[12px]">
         Illustration by{" "}
         <a
